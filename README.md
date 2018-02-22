@@ -20,4 +20,6 @@ brew bundle
 
 4. Add key on API.swift
 
-![iPhone](/screenshots/iPhone.png "iPhone") ![iPhone X](/screenshots/iPhoneX.png "iPhone X") ![iPad](/screenshots/iPad.png "iPad")
+| ![iPhone](/screenshots/iPhone.png "iPhone") | ![iPhone X](/screenshots/iPhoneX.png "iPhone X")  | ![iPad](/screenshots/iPad.png "iPad") |
+|:--:|:--:|:--:|
+| *iPhone* | *iPhone X* | *iPad* |
