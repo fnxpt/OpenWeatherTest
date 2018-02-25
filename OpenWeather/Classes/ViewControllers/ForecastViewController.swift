@@ -75,6 +75,32 @@ class ForecastViewController: UIViewController {
             show(message: "The current location is not valid, check if you have allowed gps access")
         }
     }
+    
+    @IBAction func showMessage(_ sender: Any) {
+        
+        let alertPresenter = AlertPresenter()
+        let title = "Button"
+        let myOKHandler: (UIAlertAction) -> Void = { action in
+            print("Button '\(action.title ?? "")' was pressed)")
+        }
+        let myCancelHandler: (UIAlertAction) -> Void = { action in
+            print("Button '\(action.title ?? "")' was pressed)")
+        }
+        
+        let okAction = UIAlertAction(title: title,
+                                     style: .default,
+                                     handler: myOKHandler)
+        let cancelAction = UIAlertAction(title: title,
+                                         style: .cancel,
+                                         handler: myCancelHandler)
+        
+        alertPresenter.showAlert(from: self,
+                                 title: "Test Title",
+                                 message: "Test Message",
+                                 actions: [cancelAction, okAction],
+                                 completion: nil)
+        
+    }
 }
 
 extension ForecastViewController: UITableViewDataSource {

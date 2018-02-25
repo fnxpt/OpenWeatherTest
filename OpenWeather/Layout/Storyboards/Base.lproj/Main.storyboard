@@ -97,6 +97,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="1Zi-vy-7l4">
                         <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="Alert" id="bkN-Ys-oRE">
+                            <connections>
+                                <action selector="showMessage:" destination="jd1-xI-SgP" id="j0k-Iy-z29"/>
+                            </connections>
+                        </barButtonItem>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="kvl-PY-Ts0">
                             <rect key="frame" x="127" y="7.5" width="121" height="29"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

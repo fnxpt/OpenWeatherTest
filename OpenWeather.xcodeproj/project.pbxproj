@@ -44,6 +44,8 @@
 		C2321D14203E1C00003A3F9C /* ForecastProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2321D13203E1C00003A3F9C /* ForecastProtocol.swift */; };
 		C2321D17203E1D8C003A3F9C /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2321D15203E1D8C003A3F9C /* ForecastCell.swift */; };
 		C2321D18203E1D8C003A3F9C /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2321D16203E1D8C003A3F9C /* DayCell.swift */; };
+		C2321D1B203ED5A3003A3F9C /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2321D1A203ED5A3003A3F9C /* AlertPresenter.swift */; };
+		C2321D1F203EDFAD003A3F9C /* AlertPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2321D1E203EDFAD003A3F9C /* AlertPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		C2321D13203E1C00003A3F9C /* ForecastProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastProtocol.swift; sourceTree = "<group>"; };
 		C2321D15203E1D8C003A3F9C /* ForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		C2321D16203E1D8C003A3F9C /* DayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		C2321D1A203ED5A3003A3F9C /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		C2321D1E203EDFAD003A3F9C /* AlertPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,7 @@
 				96936A9E203C750D00CBAF20 /* Provider */,
 				C2321D0D203E1B09003A3F9C /* Requests */,
 				C22236542037602A00736658 /* Resources */,
+				C2321D1A203ED5A3003A3F9C /* AlertPresenter.swift */,
 			);
 			path = OpenWeather;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			children = (
 				C222363820375DCE00736658 /* OpenWeatherTests.swift */,
 				C222363A20375DCE00736658 /* Info.plist */,
+				C2321D1E203EDFAD003A3F9C /* AlertPresenterTests.swift */,
 			);
 			path = OpenWeatherTests;
 			sourceTree = "<group>";
@@ -505,6 +511,7 @@
 				C222362620375DCE00736658 /* ForecastViewController.swift in Sources */,
 				96936AAA203C892700CBAF20 /* Updatable.swift in Sources */,
 				96936AB0203C8BA100CBAF20 /* UICollectionView+.swift in Sources */,
+				C2321D1B203ED5A3003A3F9C /* AlertPresenter.swift in Sources */,
 				C2321D12203E1BD3003A3F9C /* Response.swift in Sources */,
 				96936AAE203C8B9700CBAF20 /* UITableView+.swift in Sources */,
 				C222365B203760C400736658 /* UIViewController+.swift in Sources */,
@@ -527,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C222363920375DCE00736658 /* OpenWeatherTests.swift in Sources */,
+				C2321D1F203EDFAD003A3F9C /* AlertPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
