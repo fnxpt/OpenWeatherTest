@@ -27,7 +27,6 @@
 		C222362920375DCE00736658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C222362720375DCE00736658 /* Main.storyboard */; };
 		C222362B20375DCE00736658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C222362A20375DCE00736658 /* Assets.xcassets */; };
 		C222362E20375DCE00736658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C222362C20375DCE00736658 /* LaunchScreen.storyboard */; };
-		C222363920375DCE00736658 /* OpenWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C222363820375DCE00736658 /* OpenWeatherTests.swift */; };
 		C222365220375EF600736658 /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C222365120375EF600736658 /* DayCell.xib */; };
 		C22236592037606600736658 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22236582037606600736658 /* Requestable.swift */; };
 		C222365B203760C400736658 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C222365A203760C400736658 /* UIViewController+.swift */; };
@@ -43,6 +42,7 @@
 		C2321D14203E1C00003A3F9C /* ForecastProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2321D13203E1C00003A3F9C /* ForecastProtocol.swift */; };
 		C2321D17203E1D8C003A3F9C /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2321D15203E1D8C003A3F9C /* ForecastCell.swift */; };
 		C2321D18203E1D8C003A3F9C /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2321D16203E1D8C003A3F9C /* DayCell.swift */; };
+		C2FB42E22059631B00E4F968 /* LocationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FB42E12059631B00E4F968 /* LocationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,6 @@
 		C222362D20375DCE00736658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C222362F20375DCE00736658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C222363420375DCE00736658 /* OpenWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C222363820375DCE00736658 /* OpenWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherTests.swift; sourceTree = "<group>"; };
 		C222363A20375DCE00736658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C222365120375EF600736658 /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
 		C22236582037606600736658 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
@@ -96,6 +95,7 @@
 		C2321D13203E1C00003A3F9C /* ForecastProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastProtocol.swift; sourceTree = "<group>"; };
 		C2321D15203E1D8C003A3F9C /* ForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		C2321D16203E1D8C003A3F9C /* DayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		C2FB42E12059631B00E4F968 /* LocationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +182,7 @@
 		C222363720375DCE00736658 /* OpenWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				C222363820375DCE00736658 /* OpenWeatherTests.swift */,
+				C2FB42DE2059630100E4F968 /* Model */,
 				C222363A20375DCE00736658 /* Info.plist */,
 			);
 			path = OpenWeatherTests;
@@ -304,6 +304,14 @@
 				C2321D15203E1D8C003A3F9C /* ForecastCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		C2FB42DE2059630100E4F968 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2FB42E12059631B00E4F968 /* LocationTest.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,7 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C222363920375DCE00736658 /* OpenWeatherTests.swift in Sources */,
+				C2FB42E22059631B00E4F968 /* LocationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
