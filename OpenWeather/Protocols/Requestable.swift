@@ -15,7 +15,12 @@ extension Requestable {
                                     parameters: [String : String]?,
                                     completionHandler: @escaping (Response<T>) -> Void) where T: Decodable {
         
-        assert(!API.key.isEmpty, "In order to proceed you need to specify your key first in API.swift")
+//        "In order to proceed you need to specify your key first in API.swift"
+        guard !API.key.isEmpty else {
+            
+            completionHandler(.error(error: ServiceError.unexpected))
+            return
+        }
         
         var params: [String: String] = ["APPID": API.key,
                                          "units": API.unit]
